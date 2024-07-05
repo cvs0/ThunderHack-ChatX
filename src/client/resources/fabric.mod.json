@@ -1,22 +1,22 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "chatx",
 	"version": "${version}",
 	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A ThunderHack Recode addon for adding many chat focused modules.",
 	"authors": [
 		"cvs0"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://cvs0.xyz",
+		"sources": "https://github.com/cvs0/ThunderHack-ChatX"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/chatx/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"thunderhack": [
-			"com.example.ExampleMod"
+			"xyz.example.ChatX"
 		]
 	},
 	"depends": {
