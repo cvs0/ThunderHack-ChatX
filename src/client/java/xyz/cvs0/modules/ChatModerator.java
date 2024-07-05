@@ -7,10 +7,8 @@ import thunder.hack.events.impl.PacketEvent;
 import thunder.hack.modules.Module;
 import thunder.hack.setting.Setting;
 
-import java.util.List;
-
 public class ChatModerator extends Module {
-    private final Setting<List<String>> blacklistedWords = new Setting<>("Blacklisted Words", List.of("example1", "example2"));
+    private final Setting<String> blacklistedWords = new Setting<>("Blacklisted Words", "example1,example2");
 
     public ChatModerator() {
         super("ChatModerator", Category.getCategory("ChatX"));
@@ -25,8 +23,9 @@ public class ChatModerator extends Module {
                 messageContent = Text.of(chatPacket.body().content());
             }
 
-            for (String word : blacklistedWords.getValue()) {
-                if (messageContent.getString().contains(word)) {
+            String[] words = blacklistedWords.getValue().split(",");
+            for (String word : words) {
+                if (messageContent.getString().contains(word.trim())) {
                     if (!event.isCancelled()) {
                         event.cancel();
                     }
