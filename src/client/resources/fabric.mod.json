@@ -16,7 +16,7 @@
 	"environment": "client",
 	"entrypoints": {
 		"thunderhack": [
-			"xyz.example.ChatX"
+			"xyz.cvs0.ChatX"
 		]
 	},
 	"depends": {

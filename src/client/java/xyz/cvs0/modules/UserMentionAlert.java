@@ -1,4 +1,4 @@
-package xyz.example.modules;
+package xyz.cvs0.modules;
 
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.network.packet.s2c.play.ChatMessageS2CPacket;

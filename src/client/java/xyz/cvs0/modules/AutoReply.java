@@ -1,4 +1,4 @@
-package xyz.example.modules;
+package xyz.cvs0.modules;
 
 import meteordevelopment.orbit.EventHandler;
 import net.minecraft.network.packet.s2c.play.ChatMessageS2CPacket;
@@ -6,8 +6,6 @@ import net.minecraft.text.Text;
 import thunder.hack.events.impl.PacketEvent;
 import thunder.hack.modules.Module;
 import thunder.hack.setting.Setting;
-
-import static thunder.hack.ThunderHack.mc;
 
 public class AutoReply extends Module {
     private final Setting<String> triggerMessage = new Setting<>("Trigger Message", "ThunderHack");

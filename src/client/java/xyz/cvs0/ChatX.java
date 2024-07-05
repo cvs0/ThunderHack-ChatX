@@ -1,4 +1,4 @@
-package xyz.example;
+package xyz.cvs0;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,10 +6,10 @@ import thunder.hack.api.IAddon;
 import thunder.hack.cmd.Command;
 import thunder.hack.gui.hud.HudElement;
 import thunder.hack.modules.Module;
-import xyz.example.modules.AutoReply;
-import xyz.example.modules.ChatLogger;
-import xyz.example.modules.ChatModerator;
-import xyz.example.modules.UserMentionAlert;
+import xyz.cvs0.modules.AutoReply;
+import xyz.cvs0.modules.ChatLogger;
+import xyz.cvs0.modules.ChatModerator;
+import xyz.cvs0.modules.UserMentionAlert;
 
 import java.util.Arrays;
 import java.util.List;
@@ -39,7 +39,7 @@ public class ChatX implements IAddon {
 
     @Override
     public String getPackage() {
-        return "xyz.example";
+        return "xyz.cvs0";
     }
 
     @Override
