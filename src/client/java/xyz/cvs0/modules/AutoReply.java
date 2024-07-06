@@ -28,7 +28,7 @@ public class AutoReply extends Module {
             boolean shouldReply = exactMatch.getValue() ? messageContent.getString().equals(triggerMessage.getValue()) : messageContent.getString().contains(triggerMessage.getValue());
 
             if (shouldReply) {
-                mc.getNetworkHandler().sendChatMessage(replyMessage.getValue());
+                sendChatMessage(replyMessage.getValue());
             }
         }
     }
